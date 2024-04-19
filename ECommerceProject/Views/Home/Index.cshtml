@@ -1,0 +1,228 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- Shop By Category -->
+<div class="shop_category py-4">
+    <div class="container">
+        <h5 class="text-uppercase mb-4 fw-bold text-sm">shop by category</h5>
+        <div class="row gx-3 gy-3">
+
+            <!-- single category -->
+            <div class="col-md-4">
+                <a target="_blank" class="single_shopcat" style="background-image: url(/images/category/category-1.jpg);" asp-area="" asp-controller="Product" asp-action="ProductView">
+                    <div class="shopcat_cont">
+                        <h4>Bedroom</h4>
+                        <div class="icon">
+                            <i class="las la-long-arrow-alt-right"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- single category -->
+            <div class="col-md-4">
+                <a target="_blank" class="single_shopcat" style="background-image: url(/images/category/category-2.jpg);" asp-area="" asp-controller="Product" asp-action="ProductView">
+                    <div class="shopcat_cont">
+                        <h4>Sofa</h4>
+                        <div class="icon">
+                            <i class="las la-long-arrow-alt-right"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- single category -->
+            <div class="col-md-4">
+                <a target="_blank" class="single_shopcat" style="background-image: url(/images/category/category-3.jpg);" asp-area="" asp-controller="Product" asp-action="ProductView">
+                    <div class="shopcat_cont">
+                        <h4>Office</h4>
+                        <div class="icon">
+                            <i class="las la-long-arrow-alt-right"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- single category -->
+            <div class="col-md-4">
+                <a target="_blank" class="single_shopcat" style="background-image: url(/images/category/category-4.jpg);" asp-area="" asp-controller="Product" asp-action="ProductView">
+                    <div class="shopcat_cont">
+                        <h4>Outdoor</h4>
+                        <div class="icon">
+                            <i class="las la-long-arrow-alt-right"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- single category -->
+            <div class="col-md-4">
+                <a target="_blank" class="single_shopcat" style="background-image: url(/images/category/category-5.jpg);" asp-area="" asp-controller="Product" asp-action="ProductView">
+                    <div class="shopcat_cont">
+                        <h4>Mattress</h4>
+                        <div class="icon">
+                            <i class="las la-long-arrow-alt-right"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- single category -->
+            <div class="col-md-4">
+                <a target="_blank" class="single_shopcat" style="background-image: url(/images/category/category-6.jpg);" asp-area="" asp-controller="Product" asp-action="ProductView">
+                    <div class="shopcat_cont">
+                        <h4>Dining</h4>
+                        <div class="icon">
+                            <i class="las la-long-arrow-alt-right"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Shop By Category End -->
+
+<!-- Top New Arrival Product -->
+<div class="new_arrival py-4">
+    <div class="container pb-12 md:pb-16">
+        <h5 class="text-uppercase mb-4 fw-bold text-sm"> top new arrival </h5>
+        <!-- product grid start -->
+        <div class="row gx-4 gy-4">
+
+            <!-- single product -->
+            <div class="col-md-3">
+                <div class=" single_arrival bg-white shadow rounded-2 overflow-hidden">
+                    <!-- product image -->
+                    <div class="new_arriv_img position-relative">
+                        <img src="~/images/products/product9.jpg" alt="">
+                        <div class="prodcut_hovcont">
+                            <a target="_blank" class="search_icon" asp-area="" asp-controller="Product" asp-action="ProductView">
+                                <i class="las la-search"></i>
+                            </a>
+                            <a class="love_icon" asp-area="" asp-controller="Cart" asp-action="WishList">
+                                <i class="lar la-heart"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- product image end -->
+                    <!-- product content -->
+                    <div class="pt-4 pb-3 px-4">
+                        <a target="_blank" asp-area="" asp-controller="Product" asp-action="ProductView">
+                            <h5 class="product_title text-uppercase text-lg mb-2 text-black">Italian chair</h5>
+                        </a>
+                        <div class="d-flex align-items-baseline mb-1 gap-2 font-roboto">
+                            <p class="fw-bold" style="font-size: 17px; color: #67bccd">$45.00</p>
+                            <p class="text-decoration-line-through" style="font-size: 13px; color: #9ca3af">$55.00</p>
+                        </div>
+                    </div>
+                    <a asp-area="" asp-controller="Cart" asp-action="ShoppingCart" class="default_btn1">Add to cart</a>
+                    <!-- product content end -->
+                </div>
+            </div>
+            <!-- single product end -->
+
+            <!-- single product -->
+            <div class="col-md-3">
+                <div class=" single_arrival bg-white shadow rounded-2 overflow-hidden">
+                    <!-- product image -->
+                    <div class="new_arriv_img position-relative">
+                        <img src="~/images/products/product1.jpg" alt="">
+                        <div class="prodcut_hovcont">
+                            <a target="_blank" class="search_icon" asp-area="" asp-controller="Product" asp-action="ProductView">
+                                <i class="las la-search"></i>
+                            </a>
+                            <a class="love_icon" asp-area="" asp-controller="Cart" asp-action="WishList">
+                                <i class="lar la-heart"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- product image end -->
+                    <!-- product content -->
+                    <div class="pt-4 pb-3 px-4">
+                        <a target="_blank" asp-area="" asp-controller="Product" asp-action="ProductView">
+                            <h5 class="product_title text-uppercase text-lg mb-2 text-black">Italian Sofa</h5>
+                        </a>
+                        <div class="d-flex align-items-baseline mb-1 gap-2 font-roboto">
+                            <p class="fw-bold" style="font-size: 17px; color: #67bccd">$45.00</p>
+                            <p class="text-decoration-line-through" style="font-size: 13px; color: #9ca3af">$55.00</p>
+                        </div>
+                    </div>
+                    <a asp-area="" asp-controller="Cart" asp-action="ShoppingCart" class="default_btn1">Add to cart</a>
+                    <!-- product content end -->
+                </div>
+            </div>
+            <!-- single product end -->
+
+            <!-- single product -->
+            <div class="col-md-3">
+                <div class=" single_arrival bg-white shadow rounded-2 overflow-hidden">
+                    <!-- product image -->
+                    <div class="new_arriv_img position-relative">
+                        <img src="~/images/products/product11.jpg" alt="">
+                        <div class="prodcut_hovcont">
+                            <a target="_blank" class="search_icon" asp-area="" asp-controller="Product" asp-action="ProductView">
+                                <i class="las la-search"></i>
+                            </a>
+                            <a class="love_icon" asp-area="" asp-controller="Cart" asp-action="WishList">
+                                <i class="lar la-heart"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- product image end -->
+                    <!-- product content -->
+                    <div class="pt-4 pb-3 px-4">
+                        <a target="_blank" asp-area="" asp-controller="Product" asp-action="ProductView">
+                            <h5 class="product_title text-uppercase text-lg mb-2 text-black">Resting Bed</h5>
+                        </a>
+                        <div class="d-flex align-items-baseline mb-1 gap-2 font-roboto">
+                            <p class="fw-bold" style="font-size: 17px; color: #67bccd">$45.00</p>
+                            <p class="text-decoration-line-through" style="font-size: 13px; color: #9ca3af">$55.00</p>
+                        </div>
+                    </div>
+                    <a asp-area="" asp-controller="Cart" asp-action="ShoppingCart" class="default_btn1">Add to cart</a>
+                    <!-- product content end -->
+                </div>
+            </div>
+            <!-- single product end -->
+
+            <!-- single product -->
+            <div class="col-md-3">
+                <div class=" single_arrival bg-white shadow rounded-2 overflow-hidden">
+                    <!-- product image -->
+                    <div class="new_arriv_img position-relative">
+                        <img src="~/images/products/product12.jpg" alt="">
+                        <div class="prodcut_hovcont">
+                            <a target="_blank" class="search_icon" asp-area="" asp-controller="Product" asp-action="ProductView">
+                                <i class="las la-search"></i>
+                            </a>
+                            <a class="love_icon" asp-area="" asp-controller="Cart" asp-action="WishList">
+                                <i class="lar la-heart"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- product image end -->
+                    <!-- product content -->
+                    <div class="pt-4 pb-3 px-4">
+                        <a target="_blank" asp-area="" asp-controller="Product" asp-action="ProductView">
+                            <h5 class="product_title text-uppercase text-lg mb-2 text-black">SHOW PIECE TABLE</h5>
+                        </a>
+                        <div class="d-flex align-items-baseline mb-1 gap-2 font-roboto">
+                            <p class="fw-bold" style="font-size: 17px; color: #67bccd">$45.00</p>
+                            <p class="text-decoration-line-through" style="font-size: 13px; color: #9ca3af">$55.00</p>
+                        </div>
+                    </div>
+                    <a asp-area="" asp-controller="Cart" asp-action="ShoppingCart" class="default_btn1">Add to cart</a>
+                    <!-- product content end -->
+                </div>
+            </div>
+            <!-- single product end -->
+
+        </div>
+        <!-- product grid end -->
+
+    </div>
+</div>
+<!-- Top New Arrival Product End -->

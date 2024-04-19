@@ -1,0 +1,180 @@
+﻿
+@{
+    ViewData["Title"] = "Checkout";
+}
+
+<!-- breadcum start -->
+<div class="breadcum">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="d-flex align-items-center gap-2">
+					<a asp-area="" asp-controller="Home" asp-action="Index" style="font-size: 20px; color: #67bccd"><i class="las la-home"></i></a>
+					<span style="font-size: 14px; color: #67bccd"><i class="las la-chevron-right"></i></span>
+					<p class="mb-0" style="font-size: 16px;">Checkout</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- breadcum end -->
+
+<!-- checkout start -->
+<div class="checkout">
+	<div class="container">
+		<div class="row">
+
+            <!-- checkout form -->
+			<div class="col-md-8">
+				<h4 class="checkout_cart_title mb-4 ps-3">Billing details</h4>
+				<div class="checkout_form">
+					<div class="billing_form">
+						<div class="row gy-3">
+							<div class="col-lg-6">
+								<div class="single_billing_inp">
+									<label for="first_name">First Name <span>*</span></label>
+									<input type="text" id="first_name">
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="single_billing_inp">
+									<label for="last_name">Last Name <span>*</span></label>
+									<input type="text" id="last_name">
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="single_billing_inp">
+									<label for="company_name">Holding No/ Company Name <span>*</span></label>
+									<input type="text" id="company_name">
+								</div>
+							</div>
+							<div class="col-6">
+								@* <div class="single_billing_inp">
+									<label for="county_region">County/Region <span>*</span></label>
+									<input type="text" id="county_region">
+								</div> *@
+								<div class="single_billing_inp">
+									<label for="county_region">County/Region <span>*</span></label>
+									<select class="form-select" aria-label="Default select example">
+										<option value="1">Bangladesh</option>
+										<option value="2">Uk</option>
+										<option value="3">USA</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-6">
+								@* <div class="single_billing_inp">
+									<label for="town_city">Town/City <span>*</span></label>
+									<input type="text" id="town_city">
+								</div> *@
+								<div class="single_billing_inp">
+									<label for="town_city">Town/City <span>*</span></label>
+									<select class="form-select" aria-label="Default select example">
+										<option value="1">Dhaka</option>
+										<option value="2">Narayanganj</option>
+										<option value="3">Kushtia</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="single_billing_inp">
+									<label for="street_addr">Street Address <span>*</span></label>
+									<input type="text" id="street_addr">
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="single_billing_inp">
+									<label for="zip_code">Zip Code <span>*</span></label>
+									<input type="text" id="zip_code">
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="single_billing_inp">
+									<label for="phone_number">Phone Number <span>*</span></label>
+									<input type="text" id="phone_number">
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="single_billing_inp">
+									<label for="email_addr">Email Address <span>*</span></label>
+									<input type="text" id="email_addr">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+            <!-- checkout form end -->
+
+            <!-- sidebar -->
+			<div class="col-md-4">
+				<h4 class="checkout_cart_title ps-3">Your order</h4>
+				<div class="checkout_order">
+					<h4>product</h4>
+					<div class="single_check_order">
+						<div class="checkorder_cont">
+							<h5>Italian Chair</h5>
+							<p>
+								<span>Size: M</span>
+								<span>Color: Red</span>
+							</p>
+						</div>
+						<p class="checkorder_qnty">x1</p>
+						<p class="checkorder_price">$1084.90</p>
+					</div>
+					<div class="single_check_order">
+						<div class="checkorder_cont">
+							<h5>Resting Bed</h5>
+							<p>
+								<span>Size: M</span>
+								<span>Color: Red</span>
+							</p>
+						</div>
+						<p class="checkorder_qnty">x2</p>
+						<p class="checkorder_price">$84.00</p>
+					</div>
+					<div class="single_check_order">
+						<div class="checkorder_cont">
+							<h5>Air Bed</h5>
+							<p>
+								<span>Size: M</span>
+								<span>Color: Red</span>
+							</p>
+						</div>
+						<p class="checkorder_qnty">x1</p>
+						<p class="checkorder_price">$84.00</p>
+					</div>
+					<div class="single_check_order subs">
+						<div class="checkorder_cont subtotal-h">
+							<h5>Subtotal</h5>
+						</div>
+						<p class="checkorder_price">$140.00</p>
+					</div>
+					<div class="single_check_order subs">
+						<div class="checkorder_cont subtotal-h">
+							<h5>Shipping</h5>
+						</div>
+						<p class="checkorder_price" style="color: green;">Free</p>
+					</div>
+					<div class="single_check_order total">
+						<div class="checkorder_cont">
+							<h5>Total</h5>
+						</div>
+						<p class="checkorder_price fw-bold">$140.00</p>
+					</div>
+					<div class="checkorder_agree">
+						<input type="checkbox" class="check_inp" id="save-default">
+						<label for="save-default">Agree to our <a asp-area="" asp-controller="Home" asp-action="Privacy" class="text-color">terms &amp; conditions</a></label>
+					</div>
+
+					<div class="checkorder_btn">
+						<a href="#" class="default_btn1 text-uppercase" style="font-weight: 500;">Place Order</a>
+					</div>
+				</div>
+			</div>
+			<!-- sidebar end -->
+
+		</div>
+	</div>
+</div>
+<!-- checkout end -->

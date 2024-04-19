@@ -1,0 +1,184 @@
+﻿@{
+    ViewData["Title"] = "WishList";
+}
+
+<!-- breadcum start -->
+<div class="breadcum">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="d-flex align-items-center gap-2">
+                    <a asp-area="" asp-controller="Home" asp-action="Index" style="font-size: 20px; color: #67bccd"><i class="las la-home"></i></a>
+                    <span style="font-size: 14px; color: #67bccd"><i class="las la-chevron-right"></i></span>
+                    <p class="mb-0" style="font-size: 16px;">Wish List</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- breadcum end -->
+
+<div class="wishlist">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                
+                <!-- single wishlist -->
+                <div class="single_wishlist">
+
+                    <!-- cart image -->
+                    <div class="cart_img"><img loading="lazy" src="~/images/products/product9.jpg" alt="product"></div>
+
+                    <!-- cart content -->
+                    <div class="cart_cont">
+                        <a target="_blank" asp-area="" asp-controller="Product" asp-action="ProductView"><h5>Cuision Relax Rocking Chair</h5></a>
+                        <p class="instock">Availability: <span>In Stock</span></p>
+                    </div>
+
+                    <!-- cart price -->
+                    <div class="cart_price"><p>$45.00</p></div>
+
+                    <!-- add to cart button -->
+                    <div class="wish_cart_btn">
+                        @* <a asp-area="" asp-controller="Cart" asp-action="ShoppingCart" class="default_btn1">
+                            <span class="icon">
+                                <i class="cart_icon las la-cart-arrow-down"></i>
+                            </span> Add to Cart
+                        </a> *@
+                        <button class="default_btn1">
+                            <span class="icon">
+                                <i class="cart_icon las la-cart-arrow-down"></i>
+                            </span> Add to Cart
+                        </button>
+                    </div>
+
+                    <!-- cart remove icon -->
+                    <div class="cart_remove"><i class="las la-trash"></i></div>
+                </div>
+
+                <!-- single wishlist -->
+                <div class="single_wishlist">
+
+                    <!-- cart image -->
+                    <div class="cart_img"><img loading="lazy" src="~/images/products/product11.jpg" alt="product"></div>
+
+                    <!-- cart content -->
+                    <div class="cart_cont">
+                        <a target="_blank" asp-area="" asp-controller="Product" asp-action="ProductView"><h5>Resting Bed</h5></a>
+                        <p class="outstock">Availability: <span>Out of Stock</span></p>
+                    </div>
+
+                    <!-- cart price -->
+                    <div class="cart_price"><p>$45.00</p></div>
+
+                    <!-- add to cart button -->
+                    <div class="wish_cart_btn">
+                        <button class="default_btn1 disabled">
+                            <span class="icon">
+                                <i class="cart_icon las la-cart-arrow-down"></i>
+                            </span> Add to Cart
+                        </button>
+                    </div>
+
+                    <!-- cart remove icon -->
+                    <div class="cart_remove"><i class="las la-trash"></i></div>
+                </div>
+
+                <!-- single wishlist -->
+                <div class="single_wishlist">
+
+                    <!-- cart image -->
+                    <div class="cart_img"><img loading="lazy" src="~/images/products/product6.jpg" alt="product"></div>
+
+                    <!-- cart content -->
+                    <div class="cart_cont">
+                        <a target="_blank" asp-area="" asp-controller="Product" asp-action="ProductView"><h5>Relax Chair</h5></a>
+                        <p class="instock">Availability: <span>In Stock</span></p>
+                    </div>
+
+                    <!-- cart price -->
+                    <div class="cart_price"><p>$45.00</p></div>
+
+                    <!-- add to cart button -->
+                    <div class="wish_cart_btn">
+                        @* <a asp-area="" asp-controller="Cart" asp-action="ShoppingCart" class="default_btn1">
+                        <span class="icon">
+                        <i class="cart_icon las la-cart-arrow-down"></i>
+                        </span> Add to Cart
+                        </a> *@
+                        <button class="default_btn1">
+                            <span class="icon">
+                                <i class="cart_icon las la-cart-arrow-down"></i>
+                            </span> Add to Cart
+                        </button>
+                    </div>
+
+                    <!-- cart remove icon -->
+                    <div class="cart_remove"><i class="las la-trash"></i></div>
+                </div>
+
+                <!-- single wishlist -->
+                <div class="single_wishlist">
+
+                    <!-- cart image -->
+                    <div class="cart_img"><img loading="lazy" src="~/images/products/product3.jpg" alt="product"></div>
+
+                    <!-- cart content -->
+                    <div class="cart_cont">
+                        <a target="_blank" asp-area="" asp-controller="Product" asp-action="ProductView"><h5>Air Bed</h5></a>
+                        <p class="instock">Availability: <span>In Stock</span></p>
+                    </div>
+
+                    <!-- cart price -->
+                    <div class="cart_price"><p>$45.00</p></div>
+
+                    <!-- add to cart button -->
+                    <div class="wish_cart_btn">
+                        @* <a asp-area="" asp-controller="Cart" asp-action="ShoppingCart" class="default_btn1">
+                        <span class="icon">
+                        <i class="cart_icon las la-cart-arrow-down"></i>
+                        </span> Add to Cart
+                        </a> *@
+                        <button class="default_btn1">
+                            <span class="icon">
+                                <i class="cart_icon las la-cart-arrow-down"></i>
+                            </span> Add to Cart
+                        </button>
+                    </div>
+
+                    <!-- cart remove icon -->
+                    <div class="cart_remove"><i class="las la-trash"></i></div>
+                </div>
+
+                <!-- single wishlist -->
+                <div class="single_wishlist">
+
+                    <!-- cart image -->
+                    <div class="cart_img"><img loading="lazy" src="~/images/products/product12.jpg" alt="product"></div>
+
+                    <!-- cart content -->
+                    <div class="cart_cont">
+                        <a target="_blank" asp-area="" asp-controller="Product" asp-action="ProductView"><h5>Show Piece Table</h5></a>
+                        <p class="outstock">Availability: <span>Out of Stock</span></p>
+                    </div>
+
+                    <!-- cart price -->
+                    <div class="cart_price"><p>$45.00</p></div>
+
+                    <!-- add to cart button -->
+                    <div class="wish_cart_btn">
+                        <button class="default_btn1 disabled">
+                            <span class="icon">
+                                <i class="cart_icon las la-cart-arrow-down"></i>
+                            </span> Add to Cart
+                        </button>
+                    </div>
+
+                    <!-- cart remove icon -->
+                    <div class="cart_remove"><i class="las la-trash"></i></div>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</div>

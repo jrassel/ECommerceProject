@@ -1,0 +1,149 @@
+﻿
+@{
+    ViewData["Title"] = "ShoppingCart";
+}
+
+<!-- breadcum start -->
+<div class="breadcum">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="d-flex align-items-center gap-2">
+                    <a asp-area="" asp-controller="Home" asp-action="Index" style="font-size: 20px; color: #67bccd"><i class="las la-home"></i></a>
+                    <span style="font-size: 14px; color: #67bccd"><i class="las la-chevron-right"></i></span>
+                    <p class="mb-0" style="font-size: 16px;">Shopping Cart</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- breadcum end -->
+
+<!-- cart wrapper start -->
+<div class="shop-cart mt-4">
+    <div class="container">
+        <div class="row">
+            <!-- product card start -->
+            <div class="col-md-9">
+                <div class="shop_cart_wrap">
+
+                    <!-- single cart -->
+                    <div class="single_shop_cart mb-4">
+
+                        <!-- cart image -->
+                        <div class="cart_img mb-4 mb-md-0"><img loading="lazy" src="~/images/products/product9.jpg" alt="product"></div>
+
+                        <!-- cart content -->
+                        <div class="cart_content">
+                            <a asp-area="" asp-controller="Product" asp-action="ProductView"><h5>Italian L Shape Sofa</h5></a>
+                            <p class="price">$45.00</p>
+                            <p class="size">Size: M</p>
+                        </div>
+
+                        <!-- cart quantity -->
+                        <div class="cart_qnty">
+                            <button class="cart_qnty_btn"><i class="las la-minus"></i></button>
+                            <div class="cart_count">4</div>
+                            <button class="cart_qnty_btn"><i class="las la-plus"></i></button>
+                        </div>
+
+                        <!-- cart price -->
+                        <div class="cart_price ms-auto"><p>$1045.99</p></div>
+
+                        <!-- cart remove icon -->
+                        <div class="cart_remove ms-auto"><i class="las la-trash"></i></div>
+
+                    </div>
+
+                    <!-- single cart -->
+                    <div class="single_shop_cart mb-4">
+
+                        <!-- cart image -->
+                        <div class="cart_img mb-4 mb-md-0"><img loading="lazy" src="~/images/products/product3.jpg" alt="product"></div>
+
+                        <!-- cart content -->
+                        <div class="cart_content">
+                            <a asp-area="" asp-controller="Product" asp-action="ProductView"><h5>Air Bed</h5></a>
+                            <p class="price">$45.00</p>
+                            <p class="size">Size: XL</p>
+                        </div>
+
+                        <!-- cart quantity -->
+                        <div class="cart_qnty">
+                            <button class="cart_qnty_btn"><i class="las la-minus"></i></button>
+                            <div class="cart_count">6</div>
+                            <button class="cart_qnty_btn"><i class="las la-plus"></i></button>
+                        </div>
+
+                        <!-- cart price -->
+                        <div class="cart_price ms-auto"><p>$1045.99</p></div>
+
+                        <!-- cart remove icon -->
+                        <div class="cart_remove ms-auto"><i class="las la-trash"></i></div>
+
+                    </div>
+
+                    <!-- single cart -->
+                    <div class="single_shop_cart mb-4">
+
+                        <!-- cart image -->
+                        <div class="cart_img mb-4 mb-md-0"><img loading="lazy" src="~/images/products/product2.jpg" alt="product"></div>
+
+                        <!-- cart content -->
+                        <div class="cart_content">
+                            <a asp-area="" asp-controller="Product" asp-action="ProductView"><h5>Dashing Sofa</h5></a>
+                            <p class="price">$140.00</p>
+                            <p class="size">Size: M</p>
+                        </div>
+
+                        <!-- cart quantity -->
+                        <div class="cart_qnty">
+                            <button class="cart_qnty_btn"><i class="las la-minus"></i></button>
+                            <div class="cart_count">2</div>
+                            <button class="cart_qnty_btn"><i class="las la-plus"></i></button>
+                        </div>
+
+                        <!-- cart price -->
+                        <div class="cart_price ms-auto"><p>$1045.99</p></div>
+
+                        <!-- cart remove icon -->
+                        <div class="cart_remove ms-auto"><i class="las la-trash"></i></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- product card end -->
+
+            <!-- order summary -->
+            <div class="col-md-3">
+                <div class="cart_summary">
+                    <h4>Order Summary</h4>
+                    <div class="cartsum_text">
+                        <p style="font-weight: 500;">Subtotal</p>
+                        <p style="font-weight: 500;">$45.00</p>
+                    </div>
+                    <div class="cartsum_text">
+                        <p>Delivery</p>
+                        <p>Free</p>
+                    </div>
+                    <div class="cartsum_text">
+                        <p>Tax</p>
+                        <p>$5.00</p>
+                    </div>
+                    <div class="cart_sum_total">
+                        <p>Total</p>
+                        <p>$50.00</p>
+                    </div>
+                    <div class="cart_sum_pros_btn">
+                        <a asp-area="" asp-controller="Cart" asp-action="Checkout" class="default_btn1 text-uppercase" style="font-weight: 500;">Proccees to checkout</a>
+                    </div>
+                </div>
+            </div>
+            <!-- order summary end -->
+        </div>
+    </div>
+</div>
+<!-- card wrapper end -->
+
